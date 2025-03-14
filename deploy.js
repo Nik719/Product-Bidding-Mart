@@ -1,7 +1,7 @@
 const ghpages = require('gh-pages');
 
 // Replace with your repository URL
-const repoURL = 'https://github.com/your-username/your-repo.git';
+const repoURL = 'https://github.com/nik719/Product-Bidding-Mart.git';
 
 ghpages.publish('dist', {
   branch: 'gh-pages',
