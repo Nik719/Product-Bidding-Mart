@@ -130,19 +130,21 @@ ng build --configuration production
 
 The application is deployed using GitHub Pages:
 
-1. Install the `angular-cli-ghpages` package if you haven't already:
+1. Ensure the `index.html` file is in the root directory (`src/index.html`).
+
+2. Install the `angular-cli-ghpages` package if you haven't already:
 
 ```bash
 npm install -g angular-cli-ghpages
 ```
 
-2. Build the application:
+3. Build the application:
 
 ```bash
 ng build --configuration production --base-href /Product-Bidding-Mart/
 ```
 
-3. Deploy to GitHub Pages:
+4. Deploy to GitHub Pages:
 
 ```bash
 npx angular-cli-ghpages --dir=dist/product-bidding-mart
