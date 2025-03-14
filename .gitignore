@@ -134,3 +134,41 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# Node modules
+node_modules/
+
+# Build output
+dist/
+out-tsc/
+
+# Environment variables
+.env
+
+# IDE files
+.vscode/
+.idea/
+
+# Logs
+logs/
+*.log
+
+# Temporary files
+tmp/
+temp/
+
+# Coverage directory used by tools like istanbul
+coverage/
+
+# Angular specific
+.angular/
+
+# Compiled TypeScript
+*.tsbuildinfo
+
+# Firebase
+.firebase/
+
+# Other
+.DS_Store
+Thumbs.db
