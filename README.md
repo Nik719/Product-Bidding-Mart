@@ -76,7 +76,7 @@ npm install
 ng serve
 ```
 
-The application will be available at `http://localhost:4200`
+The application will be available at `http://localhost:5200`
 
 ## Project Structure
 
