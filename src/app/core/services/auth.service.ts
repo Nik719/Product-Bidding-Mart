@@ -9,7 +9,7 @@ import { jwtDecode } from 'jwt-decode';
   providedIn: 'root'
 })
 export class AuthService {
-  private readonly API_URL = 'http://localhost:3000/api';
+  private readonly API_URL = 'https://your-backend-url.com/api'; // Update API URL for deployment
   private readonly TOKEN_KEY = 'auth_token';
   private currentUserSubject = new BehaviorSubject<User | null>(null);
   
@@ -108,5 +108,11 @@ export class AuthService {
 
   getToken(): string | null {
     return localStorage.getItem(this.TOKEN_KEY);
+  }
+
+  connectBackend(): Observable<any> {
+    return this.http.get(`${this.API_URL}/connect`).pipe(
+      tap(response => console.log('Connected to backend:', response))
+    );
   }
 }

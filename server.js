@@ -19,6 +19,11 @@ mongoose.connect('mongodb://localhost:27017/product-bidding-mart', {
 app.use('/api/users', require('./backend/routes/users'));
 app.use('/api/products', require('./backend/routes/products'));
 
+// Add a route to handle backend connection
+app.get('/api/connect', (req, res) => {
+  res.status(200).json({ message: 'Connected to backend' });
+});
+
 // Start server
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
