@@ -1,28 +1,3 @@
-name: NodeJS with Gulp
-
-on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [18.x, 20.x, 22.x]
-
-    steps:
-    - uses: actions/checkout@v4
-
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v4
-      with:
-        node-version: ${{ matrix.node-version }}
-
-    - name: Build
-      run: |
-        npm install
-        gulp
+version https://git-lfs.github.com/spec/v1
+oid sha256:b5f055bc333e500026bbd9322253a598dd5856a9b4c6ccb07f8e67f0a459dd0c
+size 471
