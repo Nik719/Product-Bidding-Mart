@@ -64,8 +64,8 @@ Product-Bidding-Mart is an innovative e-commerce platform that allows users to b
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/Nik719/BID-MARKET.git
-cd BID-MARKET
+git clone https://github.com/Nik719/Product-Bidding-Mart.git
+cd Product-Bidding-Mart
 ```
 
 2. Install dependencies:
@@ -130,19 +130,25 @@ ng build --configuration production
 
 The application is deployed using GitHub Pages:
 
-1. Build the application:
+1. Install the `angular-cli-ghpages` package if you haven't already:
 
 ```bash
-ng build --configuration production --base-href /BID-MART/
+npm install -g angular-cli-ghpages
 ```
 
-2. Deploy to GitHub Pages:
+2. Build the application:
+
+```bash
+ng build --configuration production --base-href /Product-Bidding-Mart/
+```
+
+3. Deploy to GitHub Pages:
 
 ```bash
 npx angular-cli-ghpages --dir=dist/product-bidding-mart
 ```
 
-The application will be available at: [https://Nik719.github.io/BID-MART/](https://Nik719.github.io/BID-MART/)
+The application will be available at: [https://Nik719.github.io/Product-Bidding-Mart/](https://Nik719.github.io/Product-Bidding-Mart/)
 
 ## Pushing to GitHub
 
@@ -167,7 +173,7 @@ git commit -m "Initial commit"
 4. Add the remote repository:
 
 ```bash
-git remote add origin https://github.com/Nik719/BID-MARKET.git
+git remote add origin https://github.com/Nik719/Product-Bidding-Mart.git
 ```
 
 5. Push the changes to GitHub:
