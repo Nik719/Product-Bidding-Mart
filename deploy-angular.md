@@ -7,7 +7,7 @@
 
 2. **Build your Angular project:**
    ```bash
-   ng build --prod --base-href "https://<username>.github.io/<repository-name>/"
+   ng build --configuration production --base-href "https://<username>.github.io/<repository-name>/"
    ```
 
 3. **Install `angular-cli-ghpages` package:**
